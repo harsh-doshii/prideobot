@@ -49,6 +49,10 @@
  * }
  */
 const chat = {
+  0: {
+    text: 'Goodbye, have a nice day! :)',
+  },
+
   1: {
     text: 'Hi! Welcome! :)',
     options: [
@@ -73,42 +77,63 @@ const chat = {
     ],
   },
   3: {
-    text: 'But you probably knew that anyway.',
-    options: [
-      {
-        text: '<strong>Yes</strong>, I did!',
-        next: 4,
-      },
-      {
-        text: '<strong>Nope</strong>, this is news.',
-        next: 5,
-      },
-    ],
+    text:
+      'Thats Great! You may also see LGBT+, LGBT*, LGBTx, or LGBTQIA. I stands for intersex and A for asexual/agender.',
+    next: 8,
   },
   4: {
-    text: 'Do you identify yourself as an ally?',
+    text: 'Do you know what LGBT stands for?',
     options: [
       {
         text: '<strong>Yes</strong>, I sure do!',
-        next: 4,
+        next: 3,
       },
       {
-        text: '<strong>No</strong>, I dont know what an Ally is :(',
-        next: 5,
+        text: '<strong>No</strong>, I would really love to know',
+        next: 7,
       },
     ],
   },
   5: {
     text:
       'Alright, Queerious BITS is a safe space for every queer on campus out there!',
-    next: 6,
+    next: 4,
   },
-  6: {
-    text: 'You should check it out on Instagram',
+  7: {
+    text:
+      'LGBTQ: The acronym for “lesbian, gay, bisexual, transgender and queer". Some people also use the Q to stand for "questioning," meaning people who are figuring out their sexual orientation or gender identity.',
+    next: 8,
+  },
+
+  8: {
+    text: 'Do you want know an amazing fact!?',
     options: [
       {
-        text: 'Go to Instagram',
-        url: 'https://www.instagram.com/queeriousbits/',
+        text: 'Ya sure!',
+        next: 9,
+      },
+      {
+        text: 'Maybe next time :)',
+        next: 0,
+      },
+    ],
+  },
+  9: {
+    text:
+      'Well there is no fixed defined number, but there are around 60 different gender identities!',
+    options: [
+      {
+        text: 'Another fact?',
+        next: 10,
+      },
+      {
+        text: 'I want the whole list!',
+        url:
+          'https://abcnews.go.com/blogs/headlines/2014/02/heres-a-list-of-58-gender-options-for-facebook-users',
+      },
+      {
+        text: 'Thanks! It was fun talking',
+        next: 0,
       },
     ],
   },
