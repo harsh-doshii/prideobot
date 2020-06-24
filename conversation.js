@@ -67,7 +67,7 @@ const chat = {
       'Are you aware about the LGBTQ community and its presence on BITS Goa Campus- QueeriousBITS',
     options: [
       {
-        text: '<strong>Yes</strong>, I do!',
+        text: '<strong>Yes</strong>, I know!',
         next: 4,
       },
       {
@@ -120,7 +120,7 @@ const chat = {
   },
   9: {
     text:
-      'Well there is no fixed defined number, but there are around 60 different gender identities!',
+      'Well there is no fixed number, but there are around 60 different gender identities!',
     options: [
       {
         text: 'Another fact?',
@@ -131,6 +131,31 @@ const chat = {
         url:
           'https://abcnews.go.com/blogs/headlines/2014/02/heres-a-list-of-58-gender-options-for-facebook-users',
       },
+      {
+        text: 'Thanks! It was fun talking',
+        next: 0,
+      },
+    ],
+  },
+
+  10: {
+    text:
+      'Between 1990 and 2014, the share of Indian respondents in a survey who believed “homosexuality is never justifiable" fell from 89% to 24%.',
+    options: [
+      {
+        text: 'Another one?',
+        next: 11,
+      },
+      {
+        text: 'Thanks! It was fun talking',
+        next: 0,
+      },
+    ],
+  },
+  11: {
+    text:
+      'Okay, lets bust a myth here. Myth: Lesbian, gay and bisexual people can be identified by certain mannerisms or physical characteristics. Fact: People who are lesbian, gay or bisexual come in as many different shapes, colors and sizes as do people who are heterosexual.',
+    options: [
       {
         text: 'Thanks! It was fun talking',
         next: 0,
