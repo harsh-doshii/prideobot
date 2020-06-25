@@ -160,10 +160,6 @@ const chat = {
         text: 'Thanks! It was fun talking',
         next: 0,
       },
-      {
-        text: 'Cool! I wanna know more',
-        next: 12,
-      },
     ],
   },
 };
