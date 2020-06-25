@@ -82,7 +82,7 @@ const chat = {
     next: 8,
   },
   4: {
-    text: 'Do you know what LGBT stands for?',
+    text: 'Do you know what LGBTQ stands for?',
     options: [
       {
         text: '<strong>Yes</strong>, I sure do!',
@@ -101,7 +101,7 @@ const chat = {
   },
   7: {
     text:
-      'LGBTQ: The acronym for “lesbian, gay, bisexual, transgender and queer". Some people also use the Q to stand for "questioning," meaning people who are figuring out their sexual orientation or gender identity.',
+      'LGBTQ is the acronym for “lesbian, gay, bisexual, transgender and queer". Some people also use the Q to stand for "questioning", meaning people who are figuring out their sexual orientation or gender identity.',
     next: 8,
   },
 
@@ -159,6 +159,10 @@ const chat = {
       {
         text: 'Thanks! It was fun talking',
         next: 0,
+      },
+      {
+        text: 'Cool! I wanna know more',
+        next: 12,
       },
     ],
   },
